@@ -1,192 +1,338 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== UNICONS ====================-->
-        <link
-        rel="stylesheet"
-        href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-      />
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-        <title>qwe123coder</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-              <a href="#" class="navbar_logo grid">
-                Anirudh
-              </a>
-              <div class="nav_menu" id="nav-menu">
-                <ul class="list">
-                  <li class="nav_item">
-                    <a href="#home" class="nav_link">
-                      <i class="uil uil-estate nav_icon"></i>Home
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title >qwel</title>
+</head>
+<body>
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">Anirudh</a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class="uil uil-estate nav__icon"></i> Home
                     </a>
-                  </li>
-                  <li class="nav_item">
-                    <a href="#user" class="nav_link">
-                      <i class="uil uil-user nav_icon"></i>User
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class="uil uil-user nav__icon"></i> About
                     </a>
-                  </li>
-                  <li class="nav_item">
-                    <a href="#Skills" class="nav_link">
-                      <i class="uil uil-file-alt nav_icon"></i>Skills
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="uil uil-file-alt nav__icon"></i> Skills
                     </a>
-                  </li>
-                  <li class="nav_item">
-                    <a href="#Protfolio" class="nav_link">
-                      <i class="uil uil-image nav_icon nav_icon"></i>Protfolio
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class="uil uil-scenery nav__icon"></i> Portfolio
                     </a>
-                  </li>
-                  <li class="nav_item">
-                    <a href="#>Contact" class="nav_link">
-                      <i class="uil uil-message nav_icon"></i>Contact
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                        <i class="uil uil-estate nav__icon"></i> Contact Me
                     </a>
-                  </li>
-                </ul>
-                <i class="uil uil-times nav_close" id="nav-close" onclick="remove()"></i>
-              </div>
-              <div class="nav_button" id="nav-button">
-                <div class="nav_toggle" id="nav-toggle" onclick="add()">
-                  <i class="uil uil-apps"></i>
+                </li>
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+            <!--Theme change button-->
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--==================== MAIN ====================-->
+<main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__content grid">
+                <div class="home__social">
+                    <a href="#" class="home__social-icon">
+                        <i class="uil uil-dribbble"></i>
+                      </a>
+                      <a href="#" class="home__social-icon">
+                        <i class="uil uil-envelope-add"></i>
+                      </a>
+                    <a href="#" target="_blank" class="home__social-icon">
+                        <i class="fa fa-stack-overflow" ></i>
+                    </a>
+                    <a href="#r" target="_blank" class="home__social-icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
                 </div>
-              </div>
-            </nav>
-          </header>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-              <div class="home_container container grid">
-                <div class="home_content grid">
-                  <div class="home_social">
-                    <a href="#" class="home_social_icon">
-                      <i class="uil uil-dribbble"></i>
-                    </a>
-                    <a href="#" class="home_social_icon">
-                      <i class="uil uil-github"></i>
-                    </a>                  
-                    <a href="#" class="home_social_icon">
-                      <i class="uil uil-envelope-add"></i>
-                    </a>
-                    <a href="#" class="home_social_icon">
-                      <image src="https://d2fltix0v2e0sb.cloudfront.net/dev-rainbow.svg" alt="dev.to" class="dev-to"></image>
-                    </a>
-                  </div>
-                  <div class="home_img">
-                    <svg  class="home_blob"viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g mask="url(#mask0)">
-                          <image class="home_blob-img" href="assets/img/perfil (2).png"/>
-                      </g>   
-                  </svg>
-                  </div>
-                  <div class="home_data">
-                    <h1 class="home_title">
-                      Hello, I'm Anirudh
-                    </h1>
-                    <p class="home_subtitle">
-                      I'm a Full Stack Web Developer
-                    </p>
-                    <p class="home_description">
-                      Hi , I'm Anirudh Anup A passionate 13 year old developer from India
- with a passion for creating beautiful and functional websites.
-                    </p>
-                    <a href="#Contact" class="button button--felx">
-                      Contact me  <i class="uil uil-message"></i> 
-                    </a>
-                  </div>
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g mask="url(#mask0)">
+                            <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+
                 </div>
-              </div>
-                
-            </section>
+                <div class="home__data">
+                    <h1 class="home__title">Hello, I'm Anirudh</h1>
+                    <h3 class="home__subtitle">I'm a Full Stack Web Developer</h3>
+                    <p class="home__description">Hi , I'm Anirudh Anup A passionate 13 year old developer from India
+                        with a passion for creating beautiful and functional websites.</p>
+                    <a href="#contact" class="button button--flex">
+                        Contact Me <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </div>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-              <h2 class="about_title">About My</h2>
-              <span class="about_subtitle">
-                My Introduction
-              </span>
-              <div class="about_container container grid ">
-                <div class="about_content">
-                    <img src="assets/img/perfil (2).png" class="about_img" alt="">
-                  <div class="about_data">
-                    <p class="about_description">
-                      I'm Anirudh Anup A passionate 13 year old developer from India with a passion for creating beautiful and functional websites.
+        </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+        <h2 class="section__title"> About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+            <img src="assets/img/about.png" alt="" class="about__img">
+
+            <div class="about__data">
+                <p class="about__description">
+                    I'm Anirudh Anup A passionate 13 year old developer from India with a passion for creating beautiful and functional websites.
                       working in web technologies and Ui / Ux design and Making quality websites 
-                      and applications.</p>
+                      and applications.
+                </p>
+            </div>
+        </div>
 
-                    
-            </section>
+    </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-              <h2 class="skills_title">My Skills</h2>
-              <div class="skills_container container grid">
-                <div class="skills_content">
-                  <div class="skills_header">
-                    <i class="uil uil-bracket-curly skills_icon"></i>
-                    <div>
-                      <h3 class="skills_title">Front-End</h3>
-                      
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
+
+        <div class="skills__container container grid">
+            <div>
+                <!--====================== SKILLS 1 =============================-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Backend Development</h1>
+                            <span class="skills__subtitle">More than 6 Months</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Python</h3>
+                                <div class="skills__number">80%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__python"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Firebace</h3>
+                                <div class="skills__number">40%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__Firebace"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Django</h3>
+                                <div class="skills__number">30%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__django"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Typescript</h3>
+                                <div class="skills__number">20%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__typescript"></div>
+                            </div>
+
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Javascript</h3>
+                                <div class="skills__number">70%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__javascript"></div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
-              </div>
 
-            </section>
+                <!--====================== SKILLS 2 =============================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+                        <div>
+                            <h1 class="skills__title">Frontend Development</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React.js</h3>
+                                <div class="skills__number">70%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__react"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Next.js</h3>
+                                <div class="skills__number">60%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__Next"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Javascript</h3>
+                                <div class="skills__number">80%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__javascript"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Vue</h3>
+                                <div class="skills__number">40%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__formik"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+            <div>
+                <div class="contact__information">
+                    <i class="uil uil-discord contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Discord</h3>
+                        <span class="contact__subtitle">qwel#001</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">anirudh012009@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">127.0.0.1</span>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" id="name" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="email" class="contact__input">
+                        </div>
+                    </div>
 
 
-            </section>
+                    <div class="contact__content">
+                        <label for="message-contact" class="contact__label">Message</label>
+                        <textarea name="" cols="0" rows="7" id="message-contact" class="contact__input"></textarea>
+                    </div>
 
-            </section>
+                    <div>
+                        <a href="#" class="button button--flex">Send Message</a>
+                        <i class="uil uil-message button__icon"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
+    </section>
+</main>
 
-            </section>
+<!--==================== FOOTER ====================-->
+<!----==== have to make ========-->
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+<!--==================== SCROLL TOP ====================-->
+<a href="" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scroll__icon"></i>
+</a>
 
+<!--==================== SWIPER JS ====================-->
+<script src="assets/js/swiper-bundle.min.js"></script>
 
-            </section>
-                
-
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-
-            
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+<!--==================== MAIN JS ====================-->
+<script src="assets/js/main.js"></script>
+</body>
 </html>
