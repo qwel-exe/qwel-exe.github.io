@@ -322,6 +322,11 @@ span.name{
 
 .home__title{
     font-size: var(--big-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home__title span {
+    font-weight: 900;
 }
 
 .home__subtitle{
@@ -333,6 +338,7 @@ span.name{
 
 .home__description{
     margin-bottom: var(--mb-2);
+    line-height: 1.6;
 }
 
 .home__scroll{
@@ -436,7 +442,7 @@ span.name{
     justify-self: center;
     align-self: center;
 }
-}
+
 /*==================== SKILLS ====================*/
 .skills__container{
     row-gap: 0;
